@@ -1,0 +1,127 @@
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+  :root{
+    /* TYPOGRAPHY */
+    --FF-type: "Figtree", sans-serif;
+  
+    --FW-light:500;
+    --FW-bold:800;
+  
+    --FS-normal: 1rem;
+  
+    /* COLORS */
+    --Primary-Yellow: hsl(47, 88%, 63%);
+  
+    --Neutral-White: hsl(0, 0%, 100%);
+    --Neutral-Grey: hsl(0, 0%, 50%);
+    --Neutral-Black: hsl(0, 0%, 7%);
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .attribution {
+    margin-inline: auto;
+    margin: 2.5em;
+    font-size: 1rem;
+    font-family: var(--FF-type);
+    text-align: center; 
+    font-weight: var(--FW-light);
+  }
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+    font-weight: var(--FW-bold);
+  }
+
+  body{
+    background-color: var(--Primary-Yellow);
+    padding-block: 10em;
+    padding-inline: 3em;
+    font-family: var(--FF-type);
+    min-width: 450px;
+  }
+  
+  .wrapper{
+    border: 1px solid var(--Neutral-Black);
+    background-color: var(--Neutral-White);
+    box-shadow: 10px 10px var(--Neutral-Black);
+    max-width: 400px;
+    min-width: 375px;
+    border-radius: 25px;
+    padding-block: 1em;
+    margin-inline: auto;
+  }
+
+  .card{
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .mini-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .info-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .top{
+    margin-bottom: 1em;
+  }
+  .top img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .learn{
+    background-color: var(--Primary-Yellow);
+    font-weight: var(--FW-bold);
+    padding: .6em;
+    width: 85px;
+    border-radius: 5px;
+    color: var(--Neutral-Black);
+  }
+
+  .info-container p{
+    font-weight: var(--FW-light);
+    margin-top: 1em;
+    color: var(--Neutral-Black);
+  }
+
+  .info-container a{
+    font-size: 1.4rem;
+    margin-top: .8em;
+    color: var(--Neutral-Black);
+    text-wrap: nowrap;
+    text-decoration: none;
+    font-weight: var(--FW-bold);
+  }
+
+  .info-container a:hover,.info-container a:focus{
+    color: var(--Primary-Yellow);
+    caret-color: var(--Neutral-Black);
+  }
+
+  .card>p{
+    color: var(--Neutral-Grey);
+    font-weight: var(--FW-light);
+    margin-top: 1em;
+    line-height: 1.5;
+  }
+
+  .avatar{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  figcaption span{
+    font-weight: var(--FW-bold);
+    color: var(--Neutral-Black);
+    font-family: var(--FF-type);
+  }
