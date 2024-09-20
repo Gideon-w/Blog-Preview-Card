@@ -15,24 +15,27 @@
     <title>Blog Preview Card</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="card">
+    <!-- Main wrapper for the content -->
+    <main class="wrapper">
+      <!-- Card section of the page -->
+      <article class="card">
         <div class="mini-wrapper">
           <div class="info-container">
-            <!-- Adding descriptive alt text to the link and improving context -->
-            <a href="#" aria-label="Read more about HTML & CSS foundations">
-              HTML & CSS foundations
-            </a>
-
-            <!-- Using <time> element for date -->
-            <p>
-              <time datetime="2023-12-21">Published 21 Dec 2023</time>
-            </p>
-            <span class="learn">Learning</span>
+            <!-- Using <header> to represent the top part of the article -->
+            <header>
+              <a href="#" aria-label="Read more about HTML & CSS foundations">
+                HTML & CSS foundations
+              </a>
+              <!-- Using <time> for the published date -->
+              <p>
+                <time datetime="2023-12-21">Published 21 Dec 2023</time>
+              </p>
+              <span class="learn">Learning</span>
+            </header>
           </div>
 
+          <!-- Using <figure> for image representation -->
           <figure class="top">
-            <!-- Adding meaningful alt text for the image -->
             <img
               src="assets/images/illustration-article.svg"
               alt="Illustration for an article about web development"
@@ -42,34 +45,38 @@
           </figure>
         </div>
 
+        <!-- Main content paragraph -->
         <p>
           These languages are the backbone of every website, defining structure,
           content, and presentation.
         </p>
 
+        <!-- Avatar image for the author with semantic markup -->
         <figure class="avatar">
-          <!-- Adding alt text for the avatar image -->
           <img
             src="assets/images/image-avatar.webp"
             alt="Avatar of Greg Hooper"
             width="64"
             height="65"
           />
-          <figcaption>
-            <span>Greg Hooper</span>
-          </figcaption>
+          <figcaption><span>Greg Hooper</span></figcaption>
         </figure>
-      </div>
-    </div>
+      </article>
+    </main>
 
+    <!-- Footer attribution with semantic <footer> tag -->
     <footer class="attribution">
       Challenge by:
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
         aria-label="Frontend Mentor challenges website"
         >Frontend Mentor</a
       >.<br />
       Coded by:
-      <a href="https://www.frontendmentor.io/profile/Gideon-w" target="_blank"
+      <a
+        href="https://www.frontendmentor.io/profile/Gideon-w"
+        target="_blank"
         aria-label="Gideon-w's Frontend Mentor profile"
         >Gideon-w</a
       >.
