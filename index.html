@@ -13,23 +13,29 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Blog Preview Card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <div class="wrapper">
       <div class="card">
         <div class="mini-wrapper">
           <div class="info-container">
-            <a href="#">HTML & CSS foundations</a>
-            <p>Published 21 Dec 2023</p>
+            <!-- Adding descriptive alt text to the link and improving context -->
+            <a href="#" aria-label="Read more about HTML & CSS foundations">
+              HTML & CSS foundations
+            </a>
+
+            <!-- Using <time> element for date -->
+            <p>
+              <time datetime="2023-12-21">Published 21 Dec 2023</time>
+            </p>
             <span class="learn">Learning</span>
           </div>
 
           <figure class="top">
+            <!-- Adding meaningful alt text for the image -->
             <img
               src="assets/images/illustration-article.svg"
-              alt=""
+              alt="Illustration for an article about web development"
               width="336"
               height="201"
             />
@@ -42,13 +48,16 @@
         </p>
 
         <figure class="avatar">
+          <!-- Adding alt text for the avatar image -->
           <img
             src="assets/images/image-avatar.webp"
-            alt="image-avatar"
+            alt="Avatar of Greg Hooper"
             width="64"
             height="65"
           />
-          <figcaption><span>Greg Hooper</span></figcaption>
+          <figcaption>
+            <span>Greg Hooper</span>
+          </figcaption>
         </figure>
       </div>
     </div>
@@ -56,10 +65,14 @@
     <footer class="attribution">
       Challenge by:
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        aria-label="Frontend Mentor challenges website"
         >Frontend Mentor</a
       >.<br />
       Coded by:
-      <a href="https://www.frontendmentor.io/profile/Gideon-w">Gideon-w</a>.
+      <a href="https://www.frontendmentor.io/profile/Gideon-w" target="_blank"
+        aria-label="Gideon-w's Frontend Mentor profile"
+        >Gideon-w</a
+      >.
     </footer>
   </body>
 </html>
