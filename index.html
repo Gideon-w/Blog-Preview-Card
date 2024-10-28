@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
@@ -11,7 +12,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Blog Preview Card</title>
   </head>
   <body>
@@ -22,12 +23,16 @@
         <div class="mini-wrapper">
           <div class="info-container">
             <!-- Using <header> to represent the top part of the article -->
-            <header>
-              <a href="#" aria-label="Read more about HTML & CSS foundations">
+            <header class="main-heading">
+              <a
+                class="page-link heading-link"
+                href="#"
+                aria-label="Read more about HTML & CSS foundations"
+              >
                 HTML & CSS foundations
               </a>
               <!-- Using <time> for the published date -->
-              <p>
+              <p class="published-date">
                 <time datetime="2023-12-21">Published 21 Dec 2023</time>
               </p>
               <span class="learn">Learning</span>
@@ -46,7 +51,7 @@
         </div>
 
         <!-- Main content paragraph -->
-        <p>
+        <p class="card-text">
           These languages are the backbone of every website, defining structure,
           content, and presentation.
         </p>
@@ -59,7 +64,7 @@
             width="64"
             height="65"
           />
-          <figcaption><span>Greg Hooper</span></figcaption>
+          <figcaption class="caption"><span>Greg Hooper</span></figcaption>
         </figure>
       </article>
     </main>
