@@ -23,7 +23,6 @@
 
 body {
   background-color: var(--Primary-Yellow);
-  padding: 10em 2em;
   font-family: var(--FF-type, sans-serif);
 }
 
@@ -33,23 +32,24 @@ body {
   box-shadow: 0.4em 0.4em var(--Neutral-Black);
   max-width: calc(17em + 16vw);
   border-radius: calc(0.8em + 1vw);
-  margin-inline: auto;
+  margin: 5em auto;
 }
 
 .card {
-  padding: calc(0.7em + 1vw);
+  padding: calc(0.5em + 1vw);
+  border-radius: calc(0.8em + 1vw);
 }
 
 .mini-wrapper {
   display: flex;
   flex-direction: column-reverse;
+  gap: 1.6em;
+  border-radius: 0.8em;
 }
 
-.info-container {
-  display: flex;
-  flex-direction: column-reverse;
+.top {
+  border-radius: 0.8em;
 }
-
 .top img {
   display: block;
   width: 100%;
@@ -57,29 +57,34 @@ body {
   border-radius: 0.8em;
 }
 
+.main-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8em;
+  padding-block: 0.8em;
+  border-radius: 0.8em;
+}
+
 .learn {
-  max-width: 6em;
-  background-color: var(--Primary-Yellow);
   font-weight: var(--FW-bold);
   font-size: calc(0.5rem + 1vw);
-  text-align: center;
-  margin-top: 1.2em;
-  padding-block: 0.5em;
-  border-radius: 0.4em;
   color: var(--Neutral-Black);
+  text-align: center;
+  padding: 0.5em 0.8em;
+  border-radius: 0.4em;
+  background-color: var(--Primary-Yellow);
 }
 
 .info-container p {
   font-weight: var(--FW-light);
   font-size: calc(0.5rem + 0.8vw);
-  margin-top: 1em;
   color: var(--Neutral-Black);
 }
 
 .info-container a:link,
 .info-container a:visited {
   font-size: calc(0.7rem + 1.6vw);
-  margin-top: 0.6em;
   color: var(--Neutral-Black);
   text-decoration: none;
   font-weight: var(--FW-bold);
@@ -95,15 +100,14 @@ body {
   color: var(--Neutral-Grey);
   font-weight: var(--FW-light);
   font-size: calc(0.5rem + 1vw);
-  margin-top: 0.8em;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .avatar {
-  margin: 1.5em 0.5em 0 0;
   display: flex;
   align-items: center;
   gap: 1em;
+  margin: 1.5em 0.5em 0 0;
 }
 .avatar img {
   width: calc(1em + 5%);
@@ -117,17 +121,17 @@ figcaption span {
 }
 
 .attribution {
-  margin-inline: auto;
-  margin: 2.5em;
   font-size: calc(1rem + 1vw);
   font-family: var(--FF-type, sans-serif);
-  text-align: center;
   font-weight: var(--FW-light);
+  text-align: center;
+  margin-inline: auto;
+  margin: 2.5em;
 }
 .attribution a:link {
+  font-weight: var(--FW-bold);
   color: hsl(228, 45%, 44%);
   text-decoration: none;
-  font-weight: var(--FW-bold);
 }
 .attribution a:visited {
   color: hsl(300, 34%, 33%);
