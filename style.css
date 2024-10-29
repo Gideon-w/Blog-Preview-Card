@@ -25,33 +25,29 @@
 html {
   font-size: 62.5%;
 }
-@media (max-width: 69em) {
+
+@media (max-width: 30.125em) {
   html {
-    font-size: 50.25%;
+    font-size: 50%;
   }
 }
-@media (max-width: 55.625em) {
+@media (max-width: 23.1875em) {
   html {
-    font-size: 39.25%;
+    font-size: 42%;
   }
 }
-@media (max-width: 43.625em) {
-  html {
-    font-size: 26.25%;
-  }
-}
-@media (max-width: 29.4375em) {
-  html {
-    font-size: 20.25%;
-  }
-}
-body {
-  background-color: var(--Primary-Yellow);
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8em;
+  min-height: 1000vh;
   font-family: var(--FF-type, sans-serif);
+  padding: 10vh 2em;
+  background-color: var(--Primary-Yellow);
 }
 main {
   max-width: calc(22em + 20vw);
-  margin: 5em auto;
   padding: calc(1.5em + 0.8vw);
   display: flex;
   flex-direction: column;
@@ -61,9 +57,24 @@ main {
   border-radius: var(--Border-Radius-Big);
   border: 0.5px solid var(--Neutral-Black-950);
 }
-@media (max-width: 29.4375em) {
+@media (max-width: 69em) {
   main {
-    margin: 10em auto;
+    max-width: calc(24em + 22vw);
+  }
+}
+@media (max-width: 53em) {
+  main {
+    max-width: calc(28em + 26vw);
+  }
+}
+@media (max-width: 37.625em) {
+  main {
+    max-width: calc(30em + 26vw);
+  }
+}
+@media (max-width: 37.625em) {
+  main {
+    max-width: calc(30em + 28vw);
   }
 }
 
@@ -104,6 +115,17 @@ main {
   line-height: 1.6;
   gap: 0.8em;
 }
+
+@media (max-width: 53em) {
+  .publish-text {
+    font-size: calc(1rem + 1vw);
+  }
+}
+@media (max-width: 30.125em) {
+  .publish-text {
+    font-size: calc(1.5rem + 1vw);
+  }
+}
 .publish-text .learning {
   background-color: var(--Primary-Yellow);
   font-weight: var(--FW-bold);
@@ -119,7 +141,11 @@ main {
   letter-spacing: -0.5px;
   text-shadow: 0.2px -0.2px var(--Neutral-Grey-500);
 }
-
+@media (max-width: 53em) {
+  .heading-primary {
+    font-size: calc(2.4rem + 1vw);
+  }
+}
 /*=====================================
 =            Body Styles            =
 =====================================*/
@@ -130,6 +156,11 @@ main {
   font-size: calc(1.8rem + 0.2vw);
   color: var(--Neutral-Grey-500);
   line-height: 1.5;
+}
+@media (max-width: 53em) {
+  .body-text {
+    font-size: calc(1.8rem + 0.4vw);
+  }
 }
 .profile {
   display: flex;
@@ -154,8 +185,6 @@ main {
   font-size: calc(0.8rem + 1vw);
   font-family: var(--FF-type, sans-serif);
   text-align: center;
-  margin-inline: auto;
-  margin: 2.5em;
 }
 .attribution a:link {
   font-style: inherit;
@@ -182,4 +211,9 @@ main {
   font-weight: var(--FW-light);
   font-style: oblique;
   color: #555;
+}
+@media (max-width: 23.1875em) {
+  .attribution {
+    font-size: calc(1rem + 1vw);
+  }
 }
