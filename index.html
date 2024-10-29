@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="This is a page based on the frontend mentor challenge called Blog Preview Card"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
@@ -17,74 +21,67 @@
   </head>
   <body>
     <!-- Main wrapper for the content -->
-    <main class="wrapper">
-      <!-- Card section of the page -->
-      <article class="card">
-        <div class="mini-wrapper">
-          <div class="info-container">
-            <!-- Using <header> to represent the top part of the article -->
-            <header class="main-heading">
-              <a
-                class="page-link heading-link"
-                href="#"
-                aria-label="Read more about HTML & CSS foundations"
-              >
-                HTML & CSS foundations
-              </a>
-              <!-- Using <time> for the published date -->
-              <p class="published-date">
-                <time datetime="2023-12-21">Published 21 Dec 2023</time>
-              </p>
-              <span class="learn">Learning</span>
-            </header>
-          </div>
-
-          <!-- Using <figure> for image representation -->
-          <figure class="top">
-            <img
-              src="assets/images/illustration-article.svg"
-              alt="Illustration for an article about web development"
-              width="336"
-              height="201"
-            />
-          </figure>
+    <main>
+      <header class="main-header">
+        <figure class="img-container">
+          <img
+            src="assets/images/illustration-article.svg"
+            alt="illustration article"
+            width="285"
+            height="285"
+          />
+        </figure>
+        <div class="heading-text">
+          <p class="publish-text">
+            <span class="learning">Learning</span>
+            <time class="date" datetime="2023-12-21"
+              >Published 21 Dec 2023</time
+            >
+          </p>
+          <h1 class="heading-primary">HTML & CSS foundations</h1>
         </div>
+      </header>
 
-        <!-- Main content paragraph -->
-        <p class="card-text">
+      <!-- Main content paragraph -->
+      <div class="main-body">
+        <p class="body-text">
           These languages are the backbone of every website, defining structure,
           content, and presentation.
         </p>
+      </div>
 
-        <!-- Avatar image for the author with semantic markup -->
-        <figure class="avatar">
-          <img
-            src="assets/images/image-avatar.webp"
-            alt="Avatar of Greg Hooper"
-            width="64"
-            height="65"
-          />
-          <figcaption class="caption"><span>Greg Hooper</span></figcaption>
-        </figure>
-      </article>
+      <!-- Avatar image for the author -->
+      <figure class="profile">
+        <img
+          src="assets/images/image-avatar.webp"
+          alt="Profile picture"
+          width="65"
+          height="64"
+        />
+        <figcaption class="caption">Greg Hooper</figcaption>
+      </figure>
     </main>
 
     <!-- Footer attribution with semantic <footer> tag -->
     <footer class="attribution">
-      Challenge by:
-      <a
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
-        aria-label="Frontend Mentor challenges website"
-        >Frontend Mentor</a
-      >.<br />
-      Coded by:
-      <a
-        href="https://www.frontendmentor.io/profile/Gideon-w"
-        target="_blank"
-        aria-label="Gideon-w's Frontend Mentor profile"
-        >Gideon-w</a
-      >.
+      <div class="frontend-mentor">
+        Challenge by:
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          aria-label="Frontend Mentor challenges website"
+          >Frontend Mentor</a
+        >.
+      </div>
+      <div class="name">
+        Coded by:
+        <a
+          href="https://www.frontendmentor.io/profile/Gideon-w"
+          target="_blank"
+          aria-label="Gideon-w's Frontend Mentor profile"
+          >Gideon-w</a
+        >.
+      </div>
     </footer>
   </body>
 </html>
