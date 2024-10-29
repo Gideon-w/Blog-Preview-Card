@@ -21,67 +21,69 @@
   </head>
   <body>
     <!-- Main wrapper for the content -->
-    <main>
-      <header class="main-header">
-        <figure class="img-container">
-          <img
-            src="assets/images/illustration-article.svg"
-            alt="illustration article"
-            width="285"
-            height="285"
-          />
-        </figure>
-        <div class="heading-text">
-          <p class="publish-text">
-            <span class="learning">Learning</span>
-            <time class="date" datetime="2023-12-21"
-              >Published 21 Dec 2023</time
-            >
+    <div class="container">
+      <main>
+        <header class="main-header">
+          <figure class="img-container">
+            <img
+              src="assets/images/illustration-article.svg"
+              alt="illustration article"
+              width="285"
+              height="285"
+            />
+          </figure>
+          <div class="heading-text">
+            <p class="publish-text">
+              <span class="learning">Learning</span>
+              <time class="date" datetime="2023-12-21"
+                >Published 21 Dec 2023</time
+              >
+            </p>
+            <h1 class="heading-primary">HTML & CSS foundations</h1>
+          </div>
+        </header>
+
+        <!-- Main content paragraph -->
+        <div class="main-body">
+          <p class="body-text">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
           </p>
-          <h1 class="heading-primary">HTML & CSS foundations</h1>
         </div>
-      </header>
 
-      <!-- Main content paragraph -->
-      <div class="main-body">
-        <p class="body-text">
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
-        </p>
-      </div>
+        <!-- Avatar image for the author -->
+        <figure class="profile">
+          <img
+            src="assets/images/image-avatar.webp"
+            alt="Profile picture"
+            width="65"
+            height="64"
+          />
+          <figcaption class="caption">Greg Hooper</figcaption>
+        </figure>
+      </main>
 
-      <!-- Avatar image for the author -->
-      <figure class="profile">
-        <img
-          src="assets/images/image-avatar.webp"
-          alt="Profile picture"
-          width="65"
-          height="64"
-        />
-        <figcaption class="caption">Greg Hooper</figcaption>
-      </figure>
-    </main>
-
-    <!-- Footer attribution with semantic <footer> tag -->
-    <footer class="attribution">
-      <div class="frontend-mentor">
-        Challenge by:
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          aria-label="Frontend Mentor challenges website"
-          >Frontend Mentor</a
-        >.
-      </div>
-      <div class="name">
-        Coded by:
-        <a
-          href="https://www.frontendmentor.io/profile/Gideon-w"
-          target="_blank"
-          aria-label="Gideon-w's Frontend Mentor profile"
-          >Gideon-w</a
-        >.
-      </div>
-    </footer>
+      <!-- Footer attribution with semantic <footer> tag -->
+      <footer class="attribution">
+        <div class="frontend-mentor">
+          Challenge by:
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            aria-label="Frontend Mentor challenges website"
+            >Frontend Mentor</a
+          >.
+        </div>
+        <div class="name">
+          Coded by:
+          <a
+            href="https://www.frontendmentor.io/profile/Gideon-w"
+            target="_blank"
+            aria-label="Gideon-w's Frontend Mentor profile"
+            >Gideon-w</a
+          >.
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
