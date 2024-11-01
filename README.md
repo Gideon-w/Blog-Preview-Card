@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](Screenshot%202024-06-06%20at%2023-39-16%20Blog%20Preview%20Card.png)
+![](Screenshot%202024-06-06%20at%2023-39-16%20Blog%20Preview%20Card.png.png)
 
 
 ### Links
